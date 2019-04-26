@@ -12,7 +12,7 @@ public class UserController {
   private JdbcTemplate jdbcTemplate;
 
   @RequestMapping(value = "/user")
-  public Object person2() {
+  public Object user() {
     return jdbcTemplate.queryForList("SELECT * FROM t_user");
   }
 
